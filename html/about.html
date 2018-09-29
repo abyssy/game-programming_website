@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        @import url(../css/menu.css);
+        @import url(../css/about.css);
+        .showBk{
+            position:fixed;
+            top:0;
+            left:0; 
+            height:100%;
+            width:100%;
+            opacity:1.0;
+            transition:2.0s;
+            background-image:url(../images/homeBk2.jpg); 
+            background-size:100% 100%;
+        }
+        .hideBk{
+            position:fixed;
+            top:0;
+            left:0; 
+            height:100%;
+            width:100%;
+            opacity:0;
+            transition:2.0s;
+            background-image:url(../images/homeBk2.jpg); 
+            background-size:100% 100%;
+        }
+    </style>
+    <script src="../js/menuControl.js"></script>
+    <script src="../js/about.js"></script>
+    <script type="text/javascript">
+        function Load2() {
+            setTimeout(showBk, 1000);
+        }
+        function showBk() {
+            document.getElementById("bkImg").className = "showBk";
+         
+        }
+    </script>
+</head>
+<body onload="Load(); Load2(); AboutStart();" onselectstart="return false;" unselectable="on" style="-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;">
+    <div class="bkg" id="bk"></div>
+   <div class="hideBk" id="bkImg"></div>
+    <div class="top">
+			<br/>
+			<h1>&nbsp;&nbsp;About Us</h1>
+		</div>
+   
+
+    <div style="position:fixed;top:0%;right:50%;width:50%;height:100%;box-shadow:0 0 10px 10px lightblue">
+          <div id="pimg0"class="picS3"onclick="Turn(0)" style="background-image:url(../images/closeMenu.png);background-size:100% 100%;position:absolute;"></div>
+        <div id="pimg1"class="picS3" onclick="Turn(1)" style="background-image:url(../images/closeMenu.png);background-size:100% 100%;position:absolute;"></div>
+        <div id="pimg2"class="picS3" onclick="Turn(2)" style="background-image:url(../images/closeMenu.png);background-size:100% 100%;position:absolute;"></div>
+        <div id="pimg3"class="picS3" onclick="Turn(3)" style="background-image:url(../images/closeMenu.png);background-size:100% 100%;position:absolute;"></div>
+     <div id="pimg4"class="picS3" onclick="Turn(4)" style="background-image:url(../images/closeMenu.png);background-size:100% 100%;position:absolute;"></div>
+    </div>
+
+    <div id="text0" class="hideText">
+        <div id="tex0" style="font-size:4em;border-radius:10px;color:white;font-family:华文彩云;position:relative;top:0%;left:3%">
+            AXX&nbsp;<span style="font-size:0.4em;color:white;font-family:隶书;">XX学院</span>
+        </div>
+        <p style="font-size:2em;color:white;font-family:隶书;">&nbsp;&nbsp;热爱代码<br />&nbsp;&nbsp;也有着写代码的天分<br />&nbsp;&nbsp;三国杀高手</p>
+    </div>
+    <div id="text2" class="hideText">
+        <div id="tex2" style="font-size:4em;border-radius:10px;color:white;font-family:华文彩云;position:relative;top:0%;left:3%">
+            BXX&nbsp;<span style="font-size:0.4em;color:white;font-family:隶书;">XX学院</span>
+        </div>
+        <p style="font-size:2em;color:white;font-family:隶书;">&nbsp;&nbsp;走在码代码的路上...</p>
+    </div>
+    <div id="text3" class="hideText">
+        <div id="tex3" style="font-size:4em;border-radius:10px;color:white;font-family:华文彩云;position:relative;top:0%;left:3%">
+            CXX&nbsp;<span style="font-size:0.4em;color:white;font-family:隶书;">XX学院</span>
+        </div>
+        <p style="font-size:2em;color:white;font-family:隶书;">&nbsp;&nbsp;沉迷长歌<br />&nbsp;&nbsp;热爱生活</p>
+    </div>
+    <div id="text4" class="hideText">
+        <div id="tex4" style="font-size:4em;border-radius:10px;color:white;font-family:华文彩云;position:relative;top:0%;left:3%">
+            DXX&nbsp;<span style="font-size:0.4em;color:white;font-family:隶书;">XX学院</span>
+        </div>
+        <p style="font-size:2em;color:white;font-family:隶书;">&nbsp;&nbsp;爱好：学习、健身、美食、到处溜达</p>
+    </div>
+    <div id="text1" class="hideText">
+        <div id="tex1" style="font-size:4em;border-radius:10px;color:white;font-family:华文彩云;position:relative;top:0%;left:3%">
+            EXX&nbsp;<span style="font-size:0.4em;color:white;font-family:隶书;">XX学院</span>
+        </div>
+        <p style="font-size:2em;color:white;font-family:隶书;">&nbsp;&nbsp;喜欢钢笔、橡皮章、空手道<br/>&nbsp;&nbsp;不爱学习和码代码...</p>
+    </div>
+
+
+
+
+
+
+    <div class="MenuButton" title="open menu" onclick="OpenMenu()" style="background-image:url(../images/openMenu.png);background-size:100% 100%;" id="openButton"></div>
+    <div class="hideButton" title="close menu" onclick="CloseMenu()" style="background-image:url(../images/closeMenu.png);background-size:100% 100%;" id="closeButton"></div>
+    <div class="hideButton2" title="home" onclick="Goto('HtmlPage1.html')" style="background-image:url(../images/home.png);background-size:100% 100%;" id="homeButton"></div>
+    <div class="hideButton3" title="about us" onclick="Goto('about.html')" style="background-image:url(../images/about.png);background-size:100% 100%;" id="aboutButton"></div>
+    <div class="hideButton4" title="contact us" onclick="Goto('contact.html')" style="background-image:url(../images/contact.png);background-size:100% 100%;" id="contactButton"></div>
+    <div class="bkg bkg2" id="bkk"></div>
+</body>
+</html>

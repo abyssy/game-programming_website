@@ -1,0 +1,95 @@
+﻿
+
+
+            .bkg{
+            position:fixed;
+            top:0;
+            left:0; 
+            height:100%;
+            width:100%;
+            background-color:black; 
+            transition:0.5s;
+            background-size:100% 100%;
+            }
+            .hideButton{
+                height:3em;
+                top:0;
+                left:0;
+                position:fixed;
+                transform:rotateY(90deg);
+                transition:0.5s;
+                width:3em;
+                border-radius:1.5em;
+            }
+         
+            .MenuButton{
+                  height:3em;
+                top:0;
+                left:0;
+                position:fixed;
+                width:3em;
+                transition:0.5s;
+                border-radius:1.5em;
+            }
+            .MenuButton2{
+                  height:2.8em;
+                top:3em;
+                left:0;
+                position:fixed;
+            width:3em;
+                transition:0.5s;
+          
+            }
+              .MenuButton3{
+                  height:2.8em;
+                top:6em;
+                left:0;
+                position:fixed;
+              width:3em;
+                transition:0.5s;
+          
+            }
+                   .MenuButton4{
+                  height:2.8em;
+                top:9em;
+                left:0;
+                position:fixed;
+              width:3em;
+                transition:0.5s;
+          
+            }
+                   .hideButton2{
+                  height:2.8em;
+                top:3em;
+                left:-3em;
+                position:fixed;
+            width:3em;
+                transition:0.5s;
+          
+            }
+              .hideButton3{
+                  height:2.8em;
+                top:6em;
+                left:-3em;
+                position:fixed;
+              width:3em;
+                transition:0.5s;
+          
+            }
+                   .hideButton4{
+                  height:2.8em;
+                top:9em;
+                left:-3em;
+                position:fixed;
+              width:3em;
+                transition:0.5s;
+          
+            }
+                   .bkg2{
+                       transition:1.0s;
+    opacity:1.0;
+}
+.bkg22{
+    opacity:0.0;
+    transition:1.0s;
+}

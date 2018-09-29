@@ -1,0 +1,215 @@
+﻿  .showText{
+            width:100%;
+            position:absolute;
+          
+            left:0;
+          top:0;
+          height:100%;
+       background-color:rgb(170,170,170);
+  opacity:0.6;
+        }
+    .showText2{
+            width:100%;
+            position:fixed;
+          opacity:1.0;
+            left:0;
+            top:80%;  
+       
+        }
+        .skip{
+             font-family: Calibri,Arial, Helvetica, sans-serif;
+             cursor:pointer;
+            color:white;
+            background-color:black;
+        }
+        .skip:hover{
+             font-family: Calibri,Arial, Helvetica, sans-serif;
+            color:black;
+            background-color:white;
+        }
+   .container {
+ position:fixed;
+  width: 100%;
+  height: 100%;
+  transform-origin:50% 50%;
+}
+.totalPic{
+    position:absolute;
+    top:30%;
+    left:30%;
+    width:40%;
+    height:40%;
+}
+.leftPic{
+    position:absolute;
+    top:30%;
+    left:30%;
+    width:20%;
+    height:40%;  
+}
+.rightPic{
+    position:absolute;
+    top:30%;
+    right:30%;
+    width:20%;
+    height:40%;
+}
+#stage {
+  perspective: 600px;
+}
+.gifPos{
+    border-radius:30px;
+    cursor:pointer;
+    transform:translate3d(0,0,-3000px);
+}
+.startPos1{
+    transform:translate3d(-1500px,0,200px);
+}
+.endPos1{
+    transform:translate3d(0,0,200px);
+    transition-duration:19.0s;
+}
+.quickEnd{
+    transform:translate3d(0,0,200px);
+}
+.startPos2{
+    transform:translate3d(1500px,0,00px);
+}
+.endPos2{
+    transform:translate3d(0,0,00px);
+    transition-duration:20.0s;
+}
+.startPos3{
+    transform:translate3d(-1500px,0,-200px);
+}
+.endPos3{
+    transform:translate3d(0,0,-200px);
+    transition-duration:17s;
+}
+.leftPosS1{
+    transform:translate3d(0px,0,200px);
+    transition-duration:10.0s;
+}
+.rightPosS1{
+    transform:translate3d(0px,0,200px);
+    transition-duration:10.0s;
+}
+.leftPosE1{
+    transform:translate3d(-300px,0,200px) rotateY(45deg);
+    transition-duration:3.0s;
+}
+.rightPosE1{
+     transform:translate3d(300px,0,200px) rotateY(-45deg);
+    transition-duration:3.0s;
+}
+.leftPosS2{
+    transform:translate3d(0px,0,00px);
+    transition-duration:3.0s;
+}
+.rightPosS2{
+    transform:translate3d(0px,0,00px);
+    transition-duration:3.0s;
+}
+.leftPosE2{
+    transform:translate3d(-300px,0,0) rotateY(45deg);
+    transition-duration:3.0s;
+}
+.rightPosE2{
+     transform:translate3d(300px,0,0) rotateY(-45deg);
+    transition-duration:3.0s;
+}
+
+.leftPosS3{
+    transform:translate3d(0px,0,-200px);
+    transition-duration:3.0s;
+}
+.rightPosS3{
+    transform:translate3d(0px,0,-200px);
+    transition-duration:3.0s;
+}
+.leftPosE3{
+    transform:translate3d(-250px,0,-200px) rotateY(45deg);
+    transition-duration:3.0s;
+}
+.rightPosE3{
+     transform:translate3d(250px,0,-200px) rotateY(-45deg);
+    transition-duration:3.0s;
+}
+.leftPosS4{
+    transform:translate3d(0px,0,-400px);
+    transition-duration:3.0s;
+}
+.rightPosS4{
+    transform:translate3d(0px,0,-400px);
+    transition-duration:3.0s;
+}
+.leftPosE4{
+    transform:translate3d(-200px,0,-400px) rotateY(45deg);
+    transition-duration:3.0s;
+}
+.rightPosE4{
+     transform:translate3d(200px,0,-400px) rotateY(-45deg);
+    transition-duration:3.0s;
+}
+.leftPosS5{
+    transform:translate3d(0px,0,-600px);
+    transition-duration:3.0s;
+}
+.rightPosS5{
+    transform:translate3d(0px,0,-600px);
+    transition-duration:3.0s;
+}
+.leftPosE5{
+    transform:translate3d(-150px,0,-600px) rotateY(45deg);
+    transition-duration:3.0s;
+}
+.rightPosE5{
+     transform:translate3d(150px,0,-600px) rotateY(-45deg);
+    transition-duration:3.0s;
+}
+.tishiArrow{
+    transform:translate3d(0px,350px,-8000px);
+    animation:arrows infinite 3s;
+}
+@keyframes arrows{
+    0%{
+        transform:translate3d(0,650px,-8000px);opacity:1.0;
+    }
+    50%{
+        transform:translate3d(0,350px,-8000px);
+        opacity:1.0;
+    }
+    100%{
+        transform:translate3d(0,350px,-8000px);
+        opacity:0.0;
+    }
+}
+@keyframes arrows2{
+    0%{
+        transform:translate3d(0,750px,-8000px);opacity:0.0;
+    }
+    24%{
+        transform:translate3d(0,750px,-8000px);opacity:0.0;
+    }
+    25%{
+        transform:translate3d(0,750px,-8000px);opacity:1.0;
+    }
+    50%{
+        transform:translate3d(0,450px,-8000px);opacity:1.0;
+        }
+    75%{
+        transform:translate3d(0,450px,-8000px);
+        opacity:1.0;
+    }
+    100%{
+        transform:translate3d(0,450px,-8000px);
+        opacity:0.0;
+    }
+}
+.tishiArrow2{
+    transform:translate3d(0px,450px,-8000px);
+    animation:arrows2 infinite 3s;
+}
+a:hover{
+    
+}

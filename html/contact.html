@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        @import url(../css/menu.css);
+        form[id="contactForm"]{
+            position:fixed;
+            top:20%;
+   font-family: Arial, Helvetica, sans-serif;
+            left:25%;
+          
+        }
+        form[id="contactForm"] span{
+            color:red;
+        }
+     
+      input{
+          border-radius:5px;
+          border:none;
+         font-family: Arial, Helvetica, sans-serif;
+      }
+      textarea{
+           font-family: Arial, Helvetica, sans-serif;
+          border-radius:5px;border:none;
+          color:grey;
+        
+          height:70px;
+      }
+    </style>
+    <script src="../js/menuControl.js"></script>
+    <script src="../js/contact.js"></script>
+</head>
+<body onload="Load();  ContactLoad();" onselectstart="return false;" unselectable="on" style="-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;">
+    <div class="bkg" style="background-image:url(../images/homeBk2.jpg);background-size:100% 100%"></div>
+    <form id="contactForm" style="border-radius:10px;">
+        <h1 style="color:white">Contact Us</h1>
+        <table style="color:white">
+            <tr><td>name:</td><td><input type="text" id="formtext"/></td><td><span id="namep"></span></td></tr>
+            <tr><td>age:</td><td><input type="number"id="formnumber"onchange="CheckAge()" onkeyup="this.value = this.value.replace(/(0-9){1,3}/g, '')" min="0"max="150"step="1" /></td><td><span id="nump"></span></td></tr>
+        <tr><td>sex:</td><td><input type="radio" id="radio1"name="sex"/><label for="radio1">male</label><input type="radio" name="sex" id="radio2"/><label for="radio2">female</label></td><td><span id="sexp"></span></td></tr>
+       <tr> <td>phone-number:</td><td><input type="tel"onblur="CheckPhone()" id="formtelephone"/></td><td><span id="phonep"></span></td></tr>
+            <tr><td>email:</td><td><input type="email"onblur="CheckEmail()" id="formemail"/></td><td><span id="emailp"></span></td></tr>
+            <tr><td>profession:</td><td><input type="checkbox" id="prof" /><label for="prof">codeman</label></td></tr>
+            <tr><td>suggestions:</td><td><textarea id="formarea" onfocus="FocusArea()" onblur="LoseArea()"></textarea></td></tr>
+            <tr><td>&nbsp;</td><td></td></tr>
+            <tr><td></td><td><input type="button"onclick="CheckTotal()" value="submit"/>&nbsp;&nbsp;&nbsp;<input type="reset" value="reset" onclick="resetAll()"/></td></tr>
+         </table>
+
+      
+        
+        
+     </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="MenuButton" title="open menu" onclick="OpenMenu()" style="background-image:url(../images/openMenu.png);background-size:100% 100%;" id="openButton"></div>
+    <div class="hideButton" title="close menu" onclick="CloseMenu()" style="background-image:url(../images/closeMenu.png);background-size:100% 100%;" id="closeButton"></div>
+    <div class="hideButton2" title="home" onclick="Goto('HtmlPage1.html')" style="background-image:url(../images/home.png);background-size:100% 100%;" id="homeButton"></div>
+    <div class="hideButton3" title="about us" onclick="Goto('about.html')" style="background-image:url(../images/about.png);background-size:100% 100%;" id="aboutButton"></div>
+    <div class="hideButton4" title="contact us" onclick="Goto('contact.html')" style="background-image:url(../images/contact.png);background-size:100% 100%;" id="contactButton"></div>
+    <div class="bkg bkg2" id="bkk"></div>
+</body>
+</html>

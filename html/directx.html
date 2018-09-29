@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DirectX</title>
+    <meta charset="utf-8" />
+    <style>
+        @import url(../css/menu.css);
+        @import url(../css/subproject.css);
+    </style>
+    <script src="../js/menuControl.js"></script>
+
+</head>
+<body onload="Load()" onselectstart="return false;" unselectable="on" style="-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;">
+    <div class="bkg"></div>
+    <div class="title">
+			<img src="../images/DirectX_logo.png" style="left:30%;height:150px;margin:0;">
+		</div>
+		<div class="text">
+			<div class="content">
+				<br/>
+				<h2>Birth</h2><br/>
+				<img src="../images/DirectX1.png" style="float:left;margin:20px;">
+				<p>The first version of DirectX was released in September 1995 as the Windows Games SDK.</p>
+				<p>It was the Win32 replacement for the DCI and WinG APIs for Windows 3.1.</p>
+				<p>DirectX allowed all versions of Microsoft Windows, starting with Windows 95, to incorporate high-performance multimedia.</p>
+	            <p>In late 1994, Microsoft was ready to release Windows 95, its next operating system.</p>
+	            <p>DOS allowed direct access to video cards, keyboards, mice, sound devices, and all other parts of the system, while Windows 95 - with its protected memory model - restricted access to all of these, working on a much more standardized model.</p>
+	            <p>Eisler, St. John, and Engstrom worked together to fix this problem, with a solution that they eventually named DirectX.</p>
+	            <br/><br/> 
+			</div>
+			<div class="content">
+				<br/>
+				<h2>Feature</h2><br/>
+				<img src="../images/DirectX2.jpg" style="float:right;margin:20px;">
+				<p>DirectX is multifunctional.</p>
+				<p>OpenGL is just a graphical library. But DirectX includes graphics, sound, input, network and other modules. </p>
+				<p>Graphics part is the key of processing graphics, divided into DirectDraw and Direct3D. The most important API in the sound section is DirectSound. </p>
+				<p>DirectInput can support a lot of game input devices, it can make these devices fully play the best state and all the features. </p>
+				<p>DirectPlay is mainly for the network function of the game and the support of a variety of connections, TCP / IP, IPX, Modem, serial port, etc., so that players can use a variety of networking methods to fight.</p>
+	        	<br/><br/>
+			</div>
+			<div class="content">
+				<br/>
+				<h2>Use</h2><br/>
+				<img src="../images/DirectX4.jpg" style="width:100%;margin:20px;">
+				<p>DirectX is not a simple graphical API, it is a widely used API that developed by Microsoft's, which contains Direct Graphics, Direct Input, Direct Play, Direct Sound, Direct Show, Direct Setup, Direct Media Objects and other components, it provides a set of multimedia interface program. </p>
+				<p>At first, DirectX is developed to make up for the Windows 3.1 system on the graphics, voice processing capabilities, but now it has developed into a interface that has a decisive impact on all aspects of the entire multimedia system.</p>
+	            <br/><br/>
+			</div>
+		</div>
+    <div class="MenuButton" title="open menu" onclick="OpenMenu()" style="background-image:url(../images/openMenu.png);background-size:100% 100%;" id="openButton"></div>
+    <div class="hideButton" title="close menu" onclick="CloseMenu()" style="background-image:url(../images/closeMenu.png);background-size:100% 100%;" id="closeButton"></div>
+    <div class="hideButton2" title="home" onclick="Goto('HtmlPage1.html')" style="background-image:url(../images/home.png);background-size:100% 100%;" id="homeButton"></div>
+    <div class="hideButton3" title="about us" onclick="Goto('about.html')" style="background-image:url(../images/about.png);background-size:100% 100%;" id="aboutButton"></div>
+    <div class="hideButton4" title="contact us" onclick="Goto('contact.html')" style="background-image:url(../images/contact.png);background-size:100% 100%;" id="contactButton"></div>
+
+    <div class="bkg bkg2" id="bkk"></div></body>
+</html>

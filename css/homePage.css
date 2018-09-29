@@ -1,0 +1,23 @@
+﻿#homeTit{
+    position:fixed;
+    top:3%;
+    left:0%;
+    width:40%;
+    height:40%;
+}
+#homeText{
+    position:fixed;
+    top:50%;
+    left:6%;
+    width:26%;
+    font-size:2em;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.homeButSize{
+    border-radius:50px;
+    height:100px;
+    width:100px;
+    position:absolute;
+}

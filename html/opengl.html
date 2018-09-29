@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>OpenGL</title>
+    <meta charset="utf-8" />
+    <style>
+        @import url(../css/menu.css);
+        @import url(../css/subproject.css);
+    </style>
+    <script src="../js/menuControl.js"></script>
+
+</head>
+<body onload="Load()" onselectstart="return false;" unselectable="on" style="-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;">
+    <div class="bkg"></div>
+	<div class="title">
+			<img src="../images/OpenGL_logo.png" style="left:30%;height:150px;margin:0;">
+		</div>
+		<div class="text">
+			<div class="content">
+				<br/>
+				<h2>Birth</h2><br/>
+				<p>OpenGL is an abbreviation for "Open Graphics Library".</p>
+				<p>The OpenGL specification describes an abstract API for drawing 2D and 3D graphics.</p>
+				<p>Silicon Graphics Inc., (SGI) started developing OpenGL in 1991 and released the first version of OpenGL in January 1992. Since then, OpenGL has occasionally been extended by releasing a new version of the specification.</p>
+				<p>Applications use OpenGL extensively in the fields of computer-aided design (CAD), virtual reality, scientific visualization, information visualization, flight simulation, and video games. </p>
+				<p>OpenGL is managed by the non-profit technology consortium Khronos Group.</p>
+	            <br/><br/> 
+			</div>
+			<div class="content">
+				<br/>
+				<h2>Feature</h2><br/>
+				<img src="../images/openGL1.png" style="width:100%;margin:20px;">
+				<h3>(1) language-independent</h3><br/>
+				<p>OpenGL is an API that is defined as a set of functions which may be called by the client program, alongside a set of named integer constants (for example, the constant GL_TEXTURE_2D, which corresponds to the decimal number 3553). </p>
+				<p>Although the function definitions are superficially similar to those of the programming language C, they are language-independent.</p>
+				<h3>(2) cross-platform</h3><br/>
+				<p>OpenGL is a hardware-independent software interface that can be ported on different platforms such as Windows 95, Windows NT, Unix, Linux, MacOS, OS / 2. </p>
+				<p>Therefore, software supported for OpenGL has a very good portability, can get a very wide range of applications. </p>
+				<p>Since OpenGL is the underlying graphics library of graphics, it does not provide geometric entity primitives and can not be used directly to describe the scene.</p>
+	        	<br/><br/>
+			</div>
+			<div class="content">
+				<br/>
+				<h2>Use</h2><br/>
+				<img src="../images/openGL2.jpg" style="width:100%;margin:20px;">
+				<p>OpenGL is independent of Windows operating systems or other operating systems and is also network transparent.</p>
+				<p>In the areas of industry including CAD, content creation, energy, entertainment, game development, manufacturing, pharmaceutical and virtual reality, OpenGL helps programmers achieve high performance on hardware devices such as PCs, workstations, supercomputers, and the development of high visual expression graphics processing software.</p>
+	            <br/><br/>
+			</div>
+		</div>
+    <div class="MenuButton" title="open menu" onclick="OpenMenu()" style="background-image:url(../images/openMenu.png);background-size:100% 100%;" id="openButton"></div>
+    <div class="hideButton" title="close menu" onclick="CloseMenu()" style="background-image:url(../images/closeMenu.png);background-size:100% 100%;" id="closeButton"></div>
+    <div class="hideButton2" title="home" onclick="Goto('HtmlPage1.html')" style="background-image:url(../images/home.png);background-size:100% 100%;" id="homeButton"></div>
+    <div class="hideButton3" title="about us" onclick="Goto('about.html')" style="background-image:url(../images/about.png);background-size:100% 100%;" id="aboutButton"></div>
+    <div class="hideButton4" title="contact us" onclick="Goto('contact.html')" style="background-image:url(../images/contact.png);background-size:100% 100%;" id="contactButton"></div>
+    <div class="bkg bkg2"id="bkk"></div>
+</body>
+</html>
